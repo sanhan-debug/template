@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w3.css 2</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header .logo p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        header .logo span {
+            font-weight: bold;
+            color: #b3a79d;
+        }
+
+        /* Main section */
+        main {
+            padding: 20px;
+        }
+
+        /* Blog Section */
+        .blogs {
+            display: flex;
+            flex-wrap: wrap;
+            /* gap: 20px; */
+            flex-direction: column;
+        }
+
+        .blog {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* width: 40%; */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .blog img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .blog h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .blog span {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .blog p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .blog-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .blog-bottom button {
+            /* background-color:; */
+            border: none;
+            color: rgb(22, 17, 17);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .blog-bottom button:hover {
+            background-color: #b3adac;
+        }
+
+        .blog-bottom p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .blog-bottom span {
+            font-weight: bold;
+        }
+
+        /* Cards Section */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            /* display: block; */
+
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h1 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .popular-posts-header {
+            margin-top: 20px;
+        }
+
+        .popular-post {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .popular-post img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .popular-post h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .popular-post p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .tags-header {
+            margin-top: 20px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            /* gap: 10px; */
+            /* margin: 10px;*/
+
+        }
+
+        .tags span {
+            background-color: #fffff0;
+            padding: 5px 15px;
+            /* border-radius: 20px; */
+            /* color: white; */
+            font-size: 14px;
+            margin: 10px;
+            margin-bottom: 5px;
+
+        }
+
+        .tags span:nth-child(1) {
+            background-color: #998777;
+            /* padding: 5px 15px; */
+            /* border-radius: 20px;  */
+            color: white;
+            font-size: 14px;
+        }
+
+        .tags span:hover {
+            background-color: #817977;
+        }
+
+        /* Footer Styling */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer button {
+            background-color: #f4a261;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer button:hover {
+            background-color: #e76f51;
+        }
+
+        footer span {
+            font-size: 14px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>MY BLOG</h1>
+            <p>Welcome to the blog of <span>unknown</span></p>
+        </div>
+    </header>
+
+    <main>
+        <section id="main">
+            <div class="cards row">
+                <div class="blog col-9 col-s-12 col-x-12 col-xs-12 col-m-12">
+                    <img src="https://www.w3schools.com/w3images/woods.jpg" alt="foto blog 1" />
+                    <h2>TITLE HEADING</h2>
+                    <span>Title description, April 7, 2014</span>
+                    <p>
+                        Mauris neque quam, fermentum ut nisl vitae, convallis maximus
+                        nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+                        magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+                        mi non congue ullam corper. Praesent tincidunt sed tellus ut
+                        rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                        congue gravida diam non fringilla.
+                    </p>
+                    <div class="blog-bottom">
+                        <button>READ MORE »</button>
+                        <p>Comments <span>0</span></p>
+                    </div>
+                </div>
+
+                <div class="blog col-s-12 col-x-12 col-9 col-xs-12 col-m-12">
+                    <img src="https://www.w3schools.com/w3images/bridge.jpg" alt="foto blog 2" />
+                    <h2>TITLE HEADING</h2>
+                    <span>Title description, April 7, 2014</span>
+                    <p>
+                        Mauris neque quam, fermentum ut nisl vitae, convallis maximus
+                        nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+                        magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+                        mi non congue ullam corper. Praesent tincidunt sed tellus ut
+                        rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                        congue gravida diam non fringilla.
+                    </p>
+                    <div class="blog-bottom">
+                        <button>READ MORE »</button>
+                        <p>Comments <span>0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards row">
+                <div class="card col-3 col-s-12 col-x-12 col-m-12 col-xs-12">
+                    <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="my name foto" />
+                    <h1>My Name</h1>
+                    <p>
+                        Just me, myself and I, exploring the universe of uknownment. I
+                        have a heart of love and a interest of lorem ipsum and mauris
+                        neque quam blog. I want to share my world with you
+                    </p>
+                </div>
+                <div class="card  col-s-12 col-x-12 col-xs-12 col-m-12 col-3">
+                    <div class="popular-posts-header">
+                        <h3>Popular Posts</h3>
+                    </div>
+                    <div class="popular-post">
+                        <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="" />
+                        <h4>Lorem</h4>
+                        <p>Sed mattis nunc</p>
+                    </div>
+                    <div class="popular-post">
+                        <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="" />
+                        <h4>Ipusm</h4>
+                        <p>Praes tinci sed</p>
+                    </div>
+                    <div class="popular-post">
+                        <img src="https://www.w3schools.com/w3images/skies.jpg" alt="" />
+                        <h4>Dorum</h4>
+                        <p>Ultricies congue</p>
+                    </div>
+                    <div class="popular-post">
+                        <img src="https://www.w3schools.com/w3images/rock.jpg" alt="" />
+                        <h4>Mingsum</h4>
+                        <p>Lorem ipsum dipsum</p>
+                    </div>
+                    <br />
+                    <div class="tags col-s-12 col-x-12 col-xs-12 col-3 col-m-12 col-12">
+                        <div class="tags-header">
+                            <h3>Tags</h3>
+                        </div>
+                        <div class="tags">
+                            <span>Travel</span>
+                            <span>New York</span>
+                            <span>London</span>
+                            <span>IKEA</span>
+                            <span>NORWAY</span>
+                            <span>DIY</span>
+                            <span>Ideas</span>
+                            <span>Baby</span>
+                            <span>Family</span>
+                            <span>News</span>
+                            <span>Clothing</span>
+                            <span>Shopping</span>
+                            <span>Sports</span>
+                            <span>Games</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <button>Previous</button>
+            <button>Next »</button>
+            <span>Powered by <a href="#">w3.css</a></span>
+        </footer>
+    </main>
+</body>
+
+</html>
